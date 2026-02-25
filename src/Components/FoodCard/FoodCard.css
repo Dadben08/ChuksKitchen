@@ -1,0 +1,106 @@
+/* ================= FOOD CARD ================= */
+
+.food-card {
+  width: 100%;
+  max-width: 390px;     /* Keeps desktop design */
+  border-radius: 14px;
+  padding: 0 0 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  background: #ffffff;
+  overflow: hidden;     /* Keeps image inside rounded corners */
+  transition: all 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.food-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Content Wrapper */
+.food-content {
+  padding: 0 15px;
+}
+
+/* Title */
+.food-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 0 5px;
+}
+
+/* Description */
+.food-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Footer (Price + Button) */
+.food-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-footer span {
+  font-weight: 600;
+  font-size: 16px;
+  color: #ff5722;
+}
+
+.food-footer button {
+  padding: 8px 14px;
+  background: #ff5722;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.food-footer button:hover {
+  background: #e64a19;
+  transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .food-card {
+    width: 140%;
+  max-width: 900px;
+
+  margin-left: -40px;
+  }
+
+  .food-card h4 {
+    font-size: 16px;
+    padding: 0px 0px 0px 12px;
+  }
+
+  .food-card p {
+    font-size: 13px;
+    padding: 0px 0px 0px 12px;
+  }
+
+  .food-footer span {
+    font-size: 14px;
+    
+  }
+
+  .food-footer {
+    padding: 20px 20px 
+  }
+}

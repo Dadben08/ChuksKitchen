@@ -1,0 +1,206 @@
+/* ==========================
+   CHECKOUT WRAPPER
+========================== */
+.checkout-wrapper {
+  min-height: 100vh;
+  background: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ==========================
+   CHECKOUT CONTAINER
+========================== */
+.checkout-container {
+  width: 100%;
+  max-width: 684px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* ==========================
+   HEADER
+========================== */
+.checkout-container h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+.checkout-container p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.checkout-container hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ==========================
+   PROMO SECTION
+========================== */
+.promo-section {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.promo-section input {
+  flex: 1;
+  height: 52px;
+  border-radius: 8px;
+  padding: 0 14px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.promo-section input:focus {
+  border-color: #ff7a18;
+  box-shadow: 0 0 0 3px rgba(255, 122, 24, 0.15);
+}
+
+.promo-section button {
+  height: 52px;
+  width: 180px;
+  border: none;
+  border-radius: 8px;
+  background: #ff7a18;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.promo-section button:hover {
+  background: #e5670f;
+}
+
+/* ==========================
+   SUMMARY ROW
+========================== */
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #374151;
+}
+
+.summary-row span:last-child {
+  font-weight: 600;
+}
+
+/* ==========================
+   TOTAL
+========================== */
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ==========================
+   DELIVERY / PICKUP TOGGLE
+========================== */
+.delivery-toggle {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  position: relative;
+}
+
+.delivery-toggle button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  background: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+.delivery-toggle button.active {
+  color: white;
+  background: #ff7a18;
+}
+
+.delivery-toggle::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #ff7a18;
+  left: 0;
+  top: 0;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+.delivery-toggle.pickup::before {
+  left: 50%;
+}
+
+/* ==========================
+   PROCEED BUTTON
+========================== */
+.proceed-btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  background: #ff7a18;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.proceed-btn:hover {
+  background: #e5670f;
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 480px) {
+
+  .checkout-container {
+    padding: 20px;
+  }
+
+  .promo-section {
+    flex-direction: row;
+  }
+
+  .promo-section button {
+    width: 100%;
+  }
+
+  .summary-row,
+  .total-row {
+    font-size: 14px;
+  }
+
+  .checkout-container h3 {
+    font-size: 20px;
+  }
+}

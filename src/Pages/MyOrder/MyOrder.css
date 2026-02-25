@@ -1,0 +1,229 @@
+/* ==============================
+   MAIN CONTAINER
+================================= */
+.myorder-container {
+  min-height: 100vh;
+  padding: 60px 6%;
+  background: #f9fafb;
+}
+
+.myorder-container h2 {
+  font-size: clamp(24px, 3vw, 32px);
+  margin-bottom: 40px;
+  color: #1f2937;
+}
+
+/* ==============================
+   EMPTY STATE
+================================= */
+.empty-cart {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* ==============================
+   ORDER CARD
+================================= */
+.order-card {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 30px auto;
+
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  transition: 0.3s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* ==============================
+   LEFT SIDE
+================================= */
+.order-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.order-left img {
+  width: 160px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.order-info h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: clamp(18px, 2vw, 24px);
+  margin-bottom: 8px;
+}
+
+.order-info p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: #6b7280;
+}
+
+/* ==============================
+   RIGHT SIDE
+================================= */
+.order-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Quantity Controls */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.qty-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: #e5e7eb;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.qty-btn:hover {
+  background: #ff7a18;
+  color: white;
+}
+
+.quantity {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: clamp(20px, 3vw, 32px);
+}
+
+/* Price */
+.price {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: clamp(18px, 2vw, 24px);
+  color: #ff7a18;
+}
+
+/* Remove Button */
+.remove-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.remove-btn:hover {
+  transform: scale(1.2);
+}
+
+/* ==============================
+   TOTAL SECTION
+================================= */
+.total-section {
+  margin-top: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.total-section h3 {
+  font-size: clamp(18px, 2vw, 22px);
+}
+
+.checkout-btn {
+  padding: 14px 40px;
+  background: #ff7a18;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background: #e5670f;
+}
+
+/* ==============================
+   TABLET
+================================= */
+@media (max-width: 1024px) {
+  .myorder-container {
+    padding: 40px 4%;
+  }
+
+  .order-card {
+    gap: 30px;
+  }
+}
+
+/* ==============================
+   MOBILE
+================================= */
+@media (max-width: 768px) {
+  .myorder-container {
+    padding: 20px;
+  }
+
+  .order-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-left img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .order-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .total-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .checkout-btn {
+    width: 100%;
+  }
+}

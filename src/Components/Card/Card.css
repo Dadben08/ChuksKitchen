@@ -1,0 +1,70 @@
+/* ================= FOOD CARD ================= */
+
+.card {
+  width: 100%;              /* Make responsive */
+  max-width: 390px;         /* Keep design size */
+  border-radius: 14px;
+  padding: 2px 2px 30px 2px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background: #ffffff;
+  transition: all 0.3s ease;  /* Smooth hover */
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.card img {
+  width: 100%;              /* Responsive image */
+  height: 222px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Title */
+.card h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  padding: 15px 15px 5px;
+  color: #1F2937;
+}
+
+/* Description */
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 15px 15px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .card {
+     width: 140%;              /* Make responsive */
+  max-width: 900px; 
+    padding: 1px;
+    margin-left: -46px;
+  }
+
+  .card h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  
+}

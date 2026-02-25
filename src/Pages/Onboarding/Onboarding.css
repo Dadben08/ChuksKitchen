@@ -1,0 +1,258 @@
+/* ==============================
+   MAIN CONTAINER
+================================= */
+.onboarding-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* ==============================
+   IMAGE SIDE
+================================= */
+.image-side {
+  flex: 1;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* ==============================
+   CONTENT SIDE
+================================= */
+.content-side {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 80px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ==============================
+   TOP SECTION
+================================= */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 183px;
+  height: auto;
+}
+
+.sign-in-btn {
+  padding: 12px 28px;
+  border: 2px solid #1E88E5;
+  border-radius: 10px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1E88E5;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background: #1E88E5;
+  color: #ffffff;
+}
+
+/* ==============================
+   MIDDLE SECTION
+================================= */
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 60px 0;
+}
+
+/* TEXT */
+.text-section {
+  text-align: center;
+}
+
+.text-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #1F2937;
+  margin-bottom: 12px;
+  text-align: start;
+}
+
+.text-section p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #1F2937;
+  max-width: 557px;
+  text-align: start;
+}
+
+/* ==============================
+   ICON SECTION
+================================= */
+.icon-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 20px 0;
+}
+
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+}
+
+.icon-item img {
+  width: 44px;
+  height: 44px;
+}
+
+/* ==============================
+   BUTTON SECTION
+================================= */
+.button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.primary-btn,
+.secondary-btn {
+  width: 100%;
+  max-width: 560px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background: #FF7A18;
+  border: none;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background: #e5670f;
+}
+
+.secondary-btn {
+  border: 2px solid #1E88E5;
+  background: transparent;
+  color: #1E88E5;
+}
+
+.secondary-btn:hover {
+  background: #1E88E5;
+  color: #ffffff;
+}
+
+/* ==============================
+   FOOTER
+================================= */
+.Terms {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.Terms div {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.Terms a {
+  color: #1E88E5;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.Terms a:hover {
+  color: #000000;
+}
+
+.Terms p {
+  
+  color: #6B7280;
+}
+
+/* ==============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1024px) {
+  .content-side {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .onboarding-container {
+    flex-direction: column;
+  }
+   .image-side {
+    width: 100%;
+    height: auto;
+  }
+  .image-side img {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .content-side {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+.icon-item {
+  background-color: #F3F4F6;
+  padding: 12px;
+}
+
+.icon-section{
+  margin-left: -100px;
+}
+  .middle-section {
+    margin: 40px 0;
+  }
+
+  
+  .icon-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-section p {
+    max-width: 100%;
+  }
+}
