@@ -2,7 +2,7 @@ import "./Onboarding.css";
 import OnboardingImg from "../../assets/OnboardingImg.jpg";
 import Logo from "../../assets/ChuksKitchen.png";
 import ForkIcon from "../../assets/Onboarding/Fork.png";
-import BusIcon from "../../assets/Bus.png";
+import BusIcon from "../../assets/bus.png";
 import Footer from "../../Components/Footer/Footer";
 import { NavLink } from "react-router-dom";
 

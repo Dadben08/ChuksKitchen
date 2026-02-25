@@ -28,6 +28,17 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
+
+.card-grid .FoodCard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
 /* Banner */
 .banner {
   margin: 80px;
