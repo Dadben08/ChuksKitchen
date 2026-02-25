@@ -1,4 +1,4 @@
-import "./hero.css";
+import "./Hero.css";
 import { Search } from "lucide-react";
 
 export default function Hero() {
